@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+
+.Header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Header h1{
+    font-size: 60px;
+}
+
+.Header p{
+    color: rgb(190, 181, 181);
+}
+
+.MenuBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-nav a{
+    margin-right: 40px;
+}
+
+.News{
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+}
+.HotNews{
+    flex-direction: column;
+    left: 10px;
+    position: relative;
+    background-image: url("./assets/images/5.jpg");
+    background-repeat: no-repeat;
+    
+}
+
+.text{
+    position: absolute;
+    width: 80%;
+    bottom: 0px;
+    left: 50px;
+}
+
+.News .category_name{
+    width: 20%;
+    margin: 0px 0px 0px 30px;
+    text-align: center;
+    color: white;
+}
+
+.card .card-title{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.card .author{
+    margin-left: 40px;
+    color: black;
+}
+.card .card-content{
+    margin-left: 40px;
+    color: rgb(190, 181, 181);
+}
+
+.Topview1{
+    left: 10px;
+    position: relative;
+    background-image: url("./assets/images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc((600px - 20px)/2);
+}
+
+.Topview2{
+    left: 10px;
+    top: 20px;
+    position: relative;
+    background-image: url("./assets/images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc((600px - 20px)/2);
+}
+
+.slide_news{
+    background-color: bisque;
+}
+
+.slide_news img{
+    background: #F1F1FA;
+    width: 400;
+    height: 300px;
+    display: block;
+    margin: 10px auto;
+    border: 0;
+}
+
+h4{
+    position: relative;
+}
+
+h4::after{
+    content: "";
+    width: 50%;
+    height: 1px;
+    display: block;
+    background: brown;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.Main{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.latest_news{
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.contents_news .category_name{
+    width: 10%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.contents_news .text_date{
+    font-size: 12px;
+}
+
+.contents_news .content{
+    font-size: 12px;
+}
+
+.contents_news #category_name{
+    width: 30%;
+    font-size: 13px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.contents_news #title{
+    font-size: 13px;
+}
+
+.banner img{
+    margin-top: 20px;
+}
+
+.footer .content{
+    font-size: 13px;
+    color: rgb(164, 160, 160);
+}
+
+.footer .logo_footer{
+    background-image: url("./assets/images/logo-NAL.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 568px) {
+    .News .HotNews{
+        background-size: cover;
+        height: 250px;
+        margin-top: 20px;
+        bottom: 20px;
+    }
+
+    .News .text{
+        display: none;
+    }
+
+    .slide_news{
+        margin-top: 40px;
+        background-color: white;
+    }
+    .logo_footer{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .News .HotNews{
+        background-size: cover;
+        height: 350px;
+        margin-top: 20px;
+        bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .News .HotNews{
+        background-size: contain;
+        height: 250px;
+        margin-top: 20px;
+        bottom: 20px;
+        background-size: cover;
+        height: 600px;
+    }
+}
